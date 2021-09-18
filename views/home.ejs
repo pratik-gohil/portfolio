@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <%- include("./partials/head") %>
+  <body>
+    <div class="container">
+      <%- include("./partials/sidebar.ejs") %>
+      <div class="main">
+        <div>
+          <p class="name">PRATIK GOHIL</p>
+          <p class="job">Full Stack Web Developer</p>
+        </div>
+        <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+        <div>
+          <p class="about_me">
+            I am a developer with experience in full-stack javascript
+            development and python. my services include web design, web
+            development, PWA, API, Authentication, etc.
+          </p>
+          <button class="download_cv">
+            <a href="/public/resume.pdf" download>DOWNLOAD CV</a>
+          </button>
+        </div>
+        <div class="contact">
+          <ul>
+            <li>
+              <a href="mailto:pr.tikgohil@gmail.com">pr.tikgohil@gmail.com</a>
+            </li>
+            <li><a href="tel:+91 8104922414">+91 8104922414</a></li>
+            <li class="social_links">
+              <a target="_blank" href="https://github.com/pratik-gohil/"
+                >Github</a
+              >
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/pratik-gohil/"
+                >Linkedin</a
+              >
+              <a target="_blank" href="https://twitter.com/PratikGohil123"
+                >Twitter</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <%- include("./partials/utils.ejs") %>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

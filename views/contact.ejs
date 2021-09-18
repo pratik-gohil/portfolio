@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <%- include("./partials/head") %>
+  <body>
+    <div class="container">
+      <%- include("./partials/sidebar.ejs") %>
+      <div class="main">
+        <h1>Get In Touch</h1>
+        <form class="contact_form" method="POST" data-netlify="true">
+          <input
+            required
+            autocomplete="off"
+            name="name"
+            type="text"
+            placeholder="Name"
+          />
+          <input
+            required
+            autocomplete="off"
+            name="email"
+            type="email"
+            placeholder="Email"
+          />
+          <textarea
+            required
+            name="message"
+            placeholder="Message"
+            rows="7"
+          ></textarea>
+          <div data-netlify-recaptcha="true"></div>
+          <button>Send</button>
+        </form>
+      </div>
+    </div>
+    <%- include("./partials/utils.ejs") %>
+    <div id="form-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <p>Message has been submitted.</p>
+      </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/contact.js"></script>
+  </body>
+</html>
